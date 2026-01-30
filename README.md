@@ -81,6 +81,26 @@ bun run index.ts -i example.md -m -o document.html
 - `-l, --list-themes`: List available themes
 - `-h, --help`: Show help message
 
+### Supported Diagram Types
+
+Maidy supports the following Mermaid diagram types:
+
+**Supported:**
+- ✅ `graph` / `flowchart` - Flowcharts and directed graphs
+- ✅ `sequenceDiagram` - Sequence diagrams
+- ✅ `classDiagram` - Class diagrams
+- ✅ `stateDiagram-v2` - State diagrams
+- ✅ `erDiagram` - Entity relationship diagrams
+- ✅ `pie` - Pie charts
+- ✅ `gitGraph` - Git graphs
+
+**Not Supported:**
+- ❌ `journey` - User journey diagrams
+- ❌ `gantt` - Gantt charts
+- ❌ `C4Context` - C4 architecture diagrams
+
+These limitations come from the underlying [beautiful-mermaid](https://github.com/lukilabs/beautiful-mermaid) library.
+
 ### Themes
 
 List all available themes:

@@ -29,6 +29,18 @@ Options:
   -l, --list-themes      List available themes
   -h, --help             Show this help message
 
+Supported Diagram Types:
+  ✓ graph / flowchart   - Flowcharts and directed graphs
+  ✓ sequenceDiagram     - Sequence diagrams
+  ✓ classDiagram        - Class diagrams
+  ✓ stateDiagram-v2     - State diagrams
+  ✓ erDiagram           - Entity relationship diagrams
+  ✓ pie                 - Pie charts
+  ✓ gitGraph            - Git graphs
+  ✗ journey             - User journey diagrams (not supported)
+  ✗ gantt               - Gantt charts (not supported)
+  ✗ C4Context           - C4 architecture diagrams (not supported)
+
 Examples:
   # Render Mermaid diagram to SVG
   maidy -i diagram.mmd -o output.svg
