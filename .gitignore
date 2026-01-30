@@ -1,0 +1,7 @@
+node_modules/
+*.pdf
+*.html
+maidy
+maidy.map
+*.log
+.DS_Store
