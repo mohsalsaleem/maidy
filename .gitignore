@@ -1,6 +1,7 @@
 node_modules/
 *.pdf
 *.html
+*.svg
 maidy
 maidy.map
 *.log
