@@ -130,11 +130,19 @@ async function main() {
     process.exit(1);
   }
 
+  // Check if no input provided and stdin is a TTY (interactive terminal)
+  if (!options.input && Bun.stdin.isTTY) {
+    console.error('Error: No input provided. Use -i <file> or pipe input via stdin.');
+    console.error('Run "maidy --help" for usage information.');
+    process.exit(1);
+  }
+
   try {
     const input = await readInput(options.input);
 
     if (!input.trim()) {
-      console.error('Error: No input provided');
+      console.error('Error: No input provided. Use -i <file> or pipe input via stdin.');
+      console.error('Run "maidy --help" for usage information.');
       process.exit(1);
     }
 
